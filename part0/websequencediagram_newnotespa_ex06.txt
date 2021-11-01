@@ -1,0 +1,16 @@
+title Exercise 0.6 new note spa
+
+note over browser:
+user enters data into form for
+submitting new note and clicks 
+submit button
+end note
+
+note over browser:
+code in spa.js creates a new note object
+and adds it into the DOM as a new 'li' node
+as a child node to 'ul' node
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server->browser: 201 response

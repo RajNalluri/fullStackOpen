@@ -1,0 +1,17 @@
+title Exercise 0.5 spa
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+server->browser: /spa html page
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+server->browser: spa.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server->browser: json data of all 
+
+note over browser:
+code in spa.js create 'li' elemants
+from each note in returned data.json
+and adds them as children to 'ul' node
+and renders the page
+end note
